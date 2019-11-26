@@ -1,0 +1,11 @@
+ li  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: inherit;
+	text-decoration: none;
+	padding: 10px 10px;
+    margin-right: 1vw;
+    width:10%;
+
+}
