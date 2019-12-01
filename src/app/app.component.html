@@ -1,2 +1,27 @@
+<div class="page-loader" *ngIf="loading">
+
+    <div class="loader">
+        <span class="dot dot_1"></span>
+        <span class="dot dot_2"></span>
+        <span class="dot dot_3"></span>
+        <span class="dot dot_4"></span>
+    </div>
+</div>
+    <ion-content style="position:fixed;">
+            <ion-fab vertical="center" horizontal="end" >
+                    <ion-fab-button><i class="fas fa-info"></i></ion-fab-button>
+                  
+                    <ion-fab-list side="top">
+                      <ion-fab-button><i class="fab fa-facebook-f"></i></ion-fab-button>
+                    </ion-fab-list>
+                  
+                    <ion-fab-list side="start">
+                      <ion-fab-button><i class="fas fa-dollar-sign" style="color:#F44336"></i></ion-fab-button>
+                    </ion-fab-list>
+                  
+                  </ion-fab>
+    </ion-content>
+      
+
 
 <router-outlet></router-outlet>

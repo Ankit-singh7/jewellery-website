@@ -3,8 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home/dashboard', pathMatch: 'full'},
-  {path: 'home', loadChildren: './home-page/home-page.module#HomePageModule'},
-  {path: 'collection', loadChildren: './collection/collection.module#CollectionModule'}
+  {path: 'home', loadChildren: './home/home.module#HomeModule'},
+  {path: 'collection', loadChildren: './collection/collection.module#CollectionModule'},
+  {path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
+  {path: 'gift', loadChildren: './gift/gift.module#GiftModule'},
+  {path: 'silver', loadChildren: './silver/silver.module#SilverModule'}
 ];
 
 @NgModule({

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+button {
+    color:#919191;
+}
+
+li {
+    padding:10px;
+}
+
+li a {
+    text-decoration: none;
+    color:#919191;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.nav-text {
+    font-family: 'Philosopher', sans-serif;
+    font-size:20px;
+}

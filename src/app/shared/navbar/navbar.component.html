@@ -5,13 +5,35 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active" routerLink="/home/dashboard">Home</a>
-            <a href="#" class="nav-item nav-link">Collections</a>
-            <a href="#" class="nav-item nav-link">Gold</a>
-            <a href="#" class="nav-item nav-link disabled" tabindex="-1">Silver</a>
+            <a href="#" class="nav-item nav-link" routerLinkActive="active" routerLink="/home/dashboard"><span class="nav-text">Home</span></a>
+            <a href="#" class="nav-item nav-link" routerLinkActive="active" routerLink="/gift/offer"><span class="nav-text">Gifts/Offers</span></a>
+            <div class="btn-group show-on-hover">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                 <span class="nav-text">Gold</span>  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="javascript:void(0)" routerLink= "/collection/bangle">Bangles</a></li>
+                  <li><a href="javascript:void(0)" routerLink= "/collection/necklace">Necklace</a></li>
+                  <li><a href="javascript:void(0)" routerLink= "/collection/ring">Rings</a></li>
+                  <li><a href="javascript:void(0)" routerLink= "/collection/earring">Earrings</a></li>
+                  <li><a href="javascript:void(0)" routerLink= "/collection/bracelet">Bracelets</a></li>
+                </ul>
+              </div>
+            <div class="btn-group show-on-hover">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="nav-text">Silver</span> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="javascript:void(0)" routerLink= "/silver/bangle">Bangles</a></li>
+                    <li><a href="javascript:void(0)" routerLink= "/silver/necklace">Necklace</a></li>
+                    <li><a href="javascript:void(0)" routerLink= "/silver/ring">Rings</a></li>
+                    <li><a href="javascript:void(0)" routerLink= "/silver/earring">Earrings</a></li>
+                    <li><a href="javascript:void(0)" routerLink= "/silver/bracelet">Bracelets</a></li>
+                  </ul>
+              </div>
         </div>
         <div class="navbar-nav ml-auto">
-            <a href="#" class="nav-item nav-link">Gold & Silver rate</a>
+            <a href="#" class="nav-item nav-link"><span class="nav-text">Gold & Silver rate</span></a>
         </div>
     </div>
 </nav>
