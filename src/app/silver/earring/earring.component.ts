@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EarringComponent implements OnInit {
 
+  public selectedPic: any;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  selectedImage(event) {
+    this.selectedPic = event.src;
+  }
 }

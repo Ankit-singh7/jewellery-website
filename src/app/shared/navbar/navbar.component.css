@@ -10,12 +10,23 @@ button {
 
 li {
     padding:10px;
+    color:#919191;
+    transition:all 0.3s ease-in-out;
 }
 
 li a {
     text-decoration: none;
     color:#919191;
     font-family: 'Philosopher', sans-serif;
+    transition:all 0.3s ease-in-out;
+}
+
+/* li a:hover {
+    color:white;
+} */
+
+li a:hover{
+    letter-spacing:4px;
 }
 
 .nav-text {

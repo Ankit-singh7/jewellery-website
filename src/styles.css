@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic,latin-ext,vietnamese');
 .logo-container {
     margin: 10px 30px 10px -57px;
 }
@@ -10,7 +11,8 @@
 }
 
 .nav-container {
-    border-top: 1px dotted #919191;
+    border-top: 1px dotted #919191 !important;
+    background-color: white;
 }
 
 .box {
@@ -31,8 +33,10 @@
 }
 
 .locate-box{
-    border:2px solid #919191;
-    background-color:rgb(242,243,244);
+    position:relative;
+    /* border:2px solid #919191; */
+    /* background: linear-gradient(90deg, #3c6382, #82ccdd); */
+    z-index:0
 }
 
 .get-in-touch {
@@ -45,7 +49,34 @@
 }
 
 .carousel-container{
-    height:450px;
+    object-fit:cover;
+    height:490px !important;
+    width:350px;
+}
+
+.carousel-div {
+    position: relative;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 232px;
+    left: 200px;
+    color: white;
+}
+
+.carousel-text h1 {
+    font-family: 'Lobster', cursive;
+    font-size:70px;
+    letter-spacing: 10px;
+}
+
+.carousel-text p {
+    font-family: 'Philosopher', sans-serif;
+    margin-top:-18px;
+    margin-left:5px;
+    font-size:20px;
+    letter-spacing: 6px;
 }
 
 .collection-container {
