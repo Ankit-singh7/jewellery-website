@@ -5,6 +5,7 @@ import { OfferComponent } from './offer/offer.component';
 import { GiftRoutingModule } from './gift-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HelperService } from '../helper.service';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   ],
   exports: [
     GiftRoutingModule
-  ]
+  ],
+  providers: [HelperService]
 
 })
 export class GiftModule { }

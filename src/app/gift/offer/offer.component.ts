@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { HelperService } from 'src/app/helper.service';
 declare var $;
 
 @Component({
@@ -7,11 +8,13 @@ declare var $;
   styleUrls: ['./offer.component.css']
 })
 export class OfferComponent implements OnInit, AfterViewInit {
-  // mySwiper: Swiper;
-  constructor() { }
+  public img: any;
+  constructor(private helperService: HelperService) { }
 
   ngOnInit() {
-  }
+    this.offers();
+}
+
 
   ngAfterViewInit() {
     $(function() {
@@ -45,10 +48,16 @@ export class OfferComponent implements OnInit, AfterViewInit {
   });
 
   // dummy
-	$('#blogCarousel').carousel({
+$('#blogCarousel').carousel({
     interval: 4000
 });
 
   }
 
+  public offers = () => {
+    this.helperService.getAllOffers().subscribe(apiResponse => {
+      console.log(apiResponse);
+      this.img = `http://localhost:3000/${apiResponse.data[0].offerImg}`;
+    });
+  }
 }
