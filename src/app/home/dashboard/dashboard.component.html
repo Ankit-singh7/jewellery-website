@@ -3,8 +3,8 @@
 <app-navbar></app-navbar>
 <div class="row">
      
-  <div class="col-12">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <div class="col-sm-12">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -12,21 +12,41 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active carousel-div">
-              <img class="d-block w-100  carousel-container" src="assets/images/jwell3.jpg" alt="First slide">
-              <div class="carousel-text">
-               <img src="assets/images/logo.png" >
+            <div class="carousel-item active">
+              <div class="img">
+                <img class="d-block w-100  img-fluid" src="assets/images/jwell6.jpg" alt="First slide">
               </div>
+              
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 carousel-container" src="assets/images/jwell2.jpeg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 carousel-container" src="assets/images/jwell1.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 carousel-container" src="assets/images/jwell4.png" alt="Fourth slide">
+              <div class="img">
+                <img class="d-block w-100 img-fluid" src="assets/images/jwell8.jpg" alt="Second slide">
+                <div class="carousel-text">
+                    <h2 class="text" style="letter-spacing:5px; margin-bottom:20px;"><b>WEDDING COLLECTION</b></h2>
+                    <p class="text text-center" ><b>10-20% OFF</b></p>
+                   </div>
               </div>
+            
+            </div>
+          
+            <div class="carousel-item">
+              <div class="img">
+
+                <img class="d-block w-100 img-fluid " src="assets/images/jwell4.png" alt="Fourth slide">
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img">
+                  
+                  <img class="d-block w-100 img-fluid " src="assets/images/jwell1.jpg" alt="Third slide">
+                    <div class="carousel-text2">
+                        <h3 class="text2" style="color:white; margin-bottom:-8px;">Visit</h3>
+                        <h1 class="" style="color:white; margin-bottom:-8px"><b>OMKAR JEWELLERS</b></h1>
+                        <h3 class="text2" style="color:white">now</h3>
+                     </div>
+                  
+                </div>
+                </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -38,6 +58,10 @@
           </a>
         </div>
   </div>
+
+  <!-- dummy carousel -->
+
+  <!-- end -->
   <div class="col-12 text-center collection-container">
  <h1 style="margin-bottom: 30px;">OUR COLLECTIONS</h1>
  <div class="row">
@@ -50,9 +74,7 @@
             <h1>Bangle</h1>
          </div>
       </a>
-
-      
-     </div>
+   </div>
      <div class="sec2" routerLink="/collection/necklace">
        <a routerLink="/collection/necklace" >
           <img src="assets/images/necklace.jpg"  class="necklace" />

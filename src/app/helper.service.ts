@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,6 @@ export class HelperService {
 
 
   public getAllOffers = (): Observable<any> => {
-     return this.http.get('http://localhost:3000/api/v1/jewel/all');
+     return this.http.get(`${environment.apiUrl}/all`);
   }
 }

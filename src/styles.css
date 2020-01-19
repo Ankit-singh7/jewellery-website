@@ -25,9 +25,13 @@
     border-right: 2px solid #919191
 }
 
-.location-container a {
+.header {
     text-decoration: none !important;
+    transition:0.3s all ease-in-out;
 }
+
+
+
 
 .location-img {
     height: 20px;
@@ -47,13 +51,12 @@
 }
 
 .text{
-    color:#919191;
+    color: black;
     font-family: 'Philosopher', sans-serif;
 }
 
 .text2{
-    color:#3880ff;
-    font-weight:bold;
+    color:#4A4453;
     font-family: 'Philosopher', sans-serif;
 }
 
@@ -61,28 +64,36 @@ button .btn:focus {
     outline: none !important;
   }
 
+  .carousel-div {
+    position: relative !important;
+}
+
 .carousel-container{
     object-fit:cover;
     height:490px !important;
     width:350px;
 }
 
-.carousel-div {
-    position: relative;
-}
+
 
 .carousel-text {
     position: absolute;
+    top: 215px;
+    left: 44px;
+    color: rgba(98, 40, 207, 0.801);
+}
+
+
+
+.carousel-text2 {
+    position: absolute;
     top: 130px;
-    left: 150px;
+    left: 800px;
     color: white;
 }
 
-.carousel-text h1 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size:70px;
-    letter-spacing: 5px;
-    font-weight:600px
+.carousel-text2 h1 {
+    font-family: 'Philosopher', sans-serif;
 }
 
 .carousel-text p {
@@ -502,13 +513,14 @@ textarea {
 .form-input {
     margin-top: 20px;
     border:none;
-    border: 1px solid #919191;
+    border: 1px solid #4A4453;;
     border-radius:5px;
     padding:5px;
 }
 
 input:focus, textarea:focus, select:focus{
     outline: none;
+    border:2px solid #4A4453;
 }
 
 .button {
@@ -530,8 +542,8 @@ input:focus, textarea:focus, select:focus{
   .button1 {
     margin-top:10px;
     background-color: white; 
-    color: #919191; 
-    border: 1px solid #919191;
+    color: #4A4453; 
+    border:1px solid #4A4453;
     border-radius: 10px;
     padding:8px 20px 8px 20px;
     font-weight:bold;
@@ -540,7 +552,7 @@ input:focus, textarea:focus, select:focus{
 
   .button1:hover {
       color: white;
-      background-color:#3880ff;
+      background-color:#4A4453;
   }
 
 
@@ -641,9 +653,3 @@ input:focus, textarea:focus, select:focus{
 }
 
 
-
-  
-  
-  
-  
-  
