@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playball&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic,latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic,latin-ext,vietnamese');
+
+#toast-container > div {
+    opacity:1;
+    }
+
+
 .logo-container {
     margin-left:50px;
     margin-top:-20px;
@@ -553,6 +559,10 @@ input:focus, textarea:focus, select:focus{
   .button1:hover {
       color: white;
       background-color:#4A4453;
+  }
+
+  .button1:focus {
+    outline: none;
   }
 
 

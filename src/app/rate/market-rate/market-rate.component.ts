@@ -8,6 +8,10 @@ declare var $;
 })
 export class MarketRateComponent implements OnInit, AfterViewInit {
 
+  public goldRate = 41150;
+  public silverRate = 495;
+  public diamondRate = 1548;
+
   constructor() { }
 
   ngOnInit() {

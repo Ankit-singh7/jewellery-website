@@ -8,16 +8,16 @@
         <div class="col-6 offset-3">
           <form>
             <div class="col-12">
-                <input type="text" class="form-input" placeholder="name" />
+                <input type="text" class="form-input" placeholder="name" [(ngModel)]="name" name="name"/>
             </div>
              <div class="col-12">
-                <input type="text" class="form-input" placeholder = "email" />
+                <input type="text" class="form-input" placeholder = "email" [(ngModel)]="email" name="email" />
              </div>
              <div class="col-12">
-                <textarea type="text" class="form-input" placeholder="message" row="4"></textarea>
+                <textarea type="text" class="form-input" placeholder="message" row="4" [(ngModel)]="message" name="message"></textarea>
              </div>
              <div class="col-12">
-                <button class="button button1">SUBMIT</button>
+                <button class="button button1" (click)="login()">SUBMIT</button>
              </div>
              </form>
          </div>
